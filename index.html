@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itoアプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1 class="app-title">itoアプリ</h1>
+        </header>
+
+        <main class="app-main">
+            <div class="card-scene">
+                <div class="card" id="card">
+                    <div class="card-face card-front">
+                        <span class="number" id="number">?</span>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-back-pattern"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button type="button" class="btn btn-draw" id="draw-btn">抽選</button>
+                <button type="button" class="btn btn-blind" id="blind-btn" disabled>ブラインド</button>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <div class="memo-area" id="memo-area">
+                <div class="memo-display is-placeholder" id="memo-display">タップして入力...</div>
+                <textarea class="memo-input" id="memo-input" placeholder="メモを入力..."></textarea>
+            </div>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
